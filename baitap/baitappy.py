@@ -181,3 +181,148 @@ string_concatenation_3 = string_concatenation_1 + string_concatenation_2
 string_concatenation_4 = string_concatenation_1 + " " + string_concatenation_2
 print(string_concatenation_3)
 print(string_concatenation_4)
+
+#String format dung ham format()
+string_format_age = 15
+string_format_school = "can tho"
+string_format_tinh = "dong thap"
+string_format_ten = "my name is phuc, I am {} year old"
+string_format_ttsv = "phuc {} tuoi song o {} que o {}"
+print(string_format_ten.format(string_format_age))
+print(string_format_ttsv.format(string_format_age, string_format_school, string_format_tinh))
+
+#Escape Characters
+# \' Single Quote    
+# \\  Backslash   
+# \n  New Line    
+# \r  Carriage Return 
+# \t  Tab 
+# \b  Backspace   
+# \f  Form Feed   
+# \ooo    Octal value 
+# \xhh    Hex value
+
+string_escape = "chu tich \"ho chi minh\" la chu tich nuoc"
+print(string_escape)
+
+#String Methods
+#Method Description
+# capitalize()    Converts the first character to upper case
+# casefold()  Converts string into lower case
+# center()    Returns a centered string
+# count() Returns the number of times a specified value occurs in a string
+# encode()    Returns an encoded version of the string
+# endswith()  Returns true if the string ends with the specified value
+# expandtabs()    Sets the tab size of the string
+# find()  Searches the string for a specified value and returns the position of where it was found
+# format()    Formats specified values in a string
+# format_map()    Formats specified values in a string
+# index() Searches the string for a specified value and returns the position of where it was found
+# isalnum()   Returns True if all characters in the string are alphanumeric
+# isalpha()   Returns True if all characters in the string are in the alphabet
+# isdecimal() Returns True if all characters in the string are decimals
+# isdigit()   Returns True if all characters in the string are digits
+# isidentifier()  Returns True if the string is an identifier
+# islower()   Returns True if all characters in the string are lower case
+# isnumeric() Returns True if all characters in the string are numeric
+# isprintable()   Returns True if all characters in the string are printable
+# isspace()   Returns True if all characters in the string are whitespaces
+# istitle()   Returns True if the string follows the rules of a title
+# isupper()   Returns True if all characters in the string are upper case
+# join()  Joins the elements of an iterable to the end of the string
+# ljust() Returns a left justified version of the string
+# lower() Converts a string into lower case
+# lstrip()    Returns a left trim version of the string
+# maketrans() Returns a translation table to be used in translations
+# partition() Returns a tuple where the string is parted into three parts
+# replace()   Returns a string where a specified value is replaced with a specified value
+# rfind() Searches the string for a specified value and returns the last position of where it was found
+# rindex()    Searches the string for a specified value and returns the last position of where it was found
+# rjust() Returns a right justified version of the string
+# rpartition()    Returns a tuple where the string is parted into three parts
+# rsplit()    Splits the string at the specified separator, and returns a list
+# rstrip()    Returns a right trim version of the string
+# split() Splits the string at the specified separator, and returns a list
+# splitlines()    Splits the string at line breaks and returns a list
+# startswith()    Returns true if the string starts with the specified value
+# strip() Returns a trimmed version of the string
+# swapcase()  Swaps cases, lower case becomes upper case and vice versa
+# title() Converts the first character of each word to upper case
+# translate() Returns a translated string
+# upper() Converts a string into upper case
+# zfill() Fills the string with a specified number of 0 values at the beginning
+
+#Boolean Values
+print(10 > 5)
+print(10 == 5)
+print(10 < 11)
+
+# Python Arithmetic Operators
+# Arithmetic operators are used with numeric values to perform common mathematical operations:
+
+# Operator    Name    Example Try it
+# +   Addition    x + y   
+# -   Subtraction x - y   
+# *   Multiplication  x * y   
+# /   Division    x / y   
+# %   Modulus x % y   
+# **  Exponentiation  x ** y  
+# //  Floor division  x // y
+
+# Python Assignment Operators
+# Assignment operators are used to assign values to variables:
+
+# Operator    Example Same As Try it
+# =   x = 5   x = 5   
+# +=  x += 3  x = x + 3   
+# -=  x -= 3  x = x - 3   
+# *=  x *= 3  x = x * 3   
+# /=  x /= 3  x = x / 3   
+# %=  x %= 3  x = x % 3   
+# //= x //= 3 x = x // 3  
+# **= x **= 3 x = x ** 3  
+# &=  x &= 3  x = x & 3   
+# |=  x |= 3  x = x | 3   
+# ^=  x ^= 3  x = x ^ 3   
+# >>= x >>= 3 x = x >> 3  
+# <<= x <<= 3 x = x << 3
+
+# Python Comparison Operators
+# Comparison operators are used to compare two values:
+
+# Operator    Name    Example Try it
+# ==  Equal   x == y  
+# !=  Not equal   x != y  
+# >   Greater than    x > y   
+# <   Less than   x < y   
+# >=  Greater than or equal to    x >= y  
+# <=  Less than or equal to   x <= y  
+# Python Logical Operators
+# Logical operators are used to combine conditional statements:
+
+# Operator    Description Example Try it
+# and     Returns True if both statements are true    x < 5 and  x < 10   
+# or  Returns True if one of the statements is true   x < 5 or x < 4  
+# not Reverse the result, returns False if the result is true not(x < 5 and x < 10)   
+# Python Identity Operators
+# Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+
+# Operator    Description Example Try it
+# is  Returns True if both variables are the same object  x is y  
+# is not  Returns True if both variables are not the same object  x is not y  
+# Python Membership Operators
+# Membership operators are used to test if a sequence is presented in an object:
+
+# Operator    Description Example Try it
+# in  Returns True if a sequence with the specified value is present in the object    x in y  
+# not in  Returns True if a sequence with the specified value is not present in the object    x not in y  
+# Python Bitwise Operators
+# Bitwise operators are used to compare (binary) numbers:
+
+# Operator    Name    Description
+# &   AND Sets each bit to 1 if both bits are 1
+# |   OR  Sets each bit to 1 if one of two bits is 1
+#  ^  XOR Sets each bit to 1 if only one of two bits is 1
+# ~   NOT Inverts all the bits
+# <<  Zero fill left shift    Shift left by pushing zeros in from the right and let the leftmost bits fall off
+# >>  Signed right shift  Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off

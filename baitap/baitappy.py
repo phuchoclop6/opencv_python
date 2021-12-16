@@ -78,8 +78,106 @@ print("\nlấy loại dữ liệu")
 layloaidulieu = 5                                                      
 print(type(layloaidulieu))
 
-#
+#Số python 
+print("\nso python")
+soint = 1
+sofloat = 2.8
+socomplex = 2j
 
+print(type(soint))
+print(type(sofloat))
+print(type(socomplex))
 
+#chuyen doi loai so
+print("\n chuyen doi loai so")
+soint_float = float(soint)
+sofloat_int = int(sofloat)
+soint_complex = complex(soint)
+print(soint_float)
+print(sofloat_int)
+print(soint_complex)
 
+print(type(soint_float))
+print(type(sofloat_int))
+print(type(soint_complex))
 
+#so ngau nhien random
+import random
+print(random.randrange(1, 10))
+print("\n")
+
+#chi dinh gia tri cua 1 bien
+chidinhx = int(2.5)
+print(chidinhx)
+chidinhy = float(2)
+print(chidinhy)
+chidinhz = complex(1)
+print(chidinhz)
+chidinha = str("chao1")
+print(chidinha)
+
+#String
+#gan chuoi cho 1 bien
+stringa = "day la chuoi a"
+print("\n " + stringa)
+
+#chuoi nhieu dong 
+stringnhieudong = """chao,
+cac,
+ban."""
+print(stringnhieudong)
+
+#chuoi mang
+stringmang = "hello, phuc"
+print("\n" + stringmang[1])
+
+#vong qua 1 chuoi 
+stringvonglap = " string vong lap"
+for i in stringvonglap:
+    print(i)
+print("\n")
+
+#String length (len())
+stringlength = "string length"
+print(len(stringlength))
+print("\n")
+
+#Check String
+check_string = "day la chuoi can phai kiem tra"
+print("phuc" in check_string)
+print("chuoioi" in check_string)
+if "chuoi" in check_string:
+    print("chuoi in check_string")
+else:
+    print("khong co")
+print("\n")
+
+#Slicing (chonj vi tri cua tu se xuat hien)
+string_slicing = "chuoi can chon vi tri xuat hien cua chu"
+print(string_slicing[2:9])
+print(string_slicing[:9])
+print(string_slicing[2:])
+print(string_slicing[-2:-9])
+
+#Upper Case
+string_uppercase = "string upper case"
+print(string_uppercase.upper())
+#lower case
+string_lowercase = "String Lower Case"
+print(string_lowercase.lower())
+#strip
+string_remove_whitespace = " xoa khoang trang "
+print(string_remove_whitespace.strip())
+#Replace String
+string_replace = "thay the chuoi"
+print(string_replace.replace("the", "vao"))
+#Split string
+string_split = "split string"
+print(string_split.split(" "))
+#String concatenation 
+string_concatenation_1 = "noi chuoi"
+string_concatenation_2 = "lai voi nhau"
+string_concatenation_3 = string_concatenation_1 + string_concatenation_2
+string_concatenation_4 = string_concatenation_1 + " " + string_concatenation_2
+print(string_concatenation_3)
+print(string_concatenation_4)

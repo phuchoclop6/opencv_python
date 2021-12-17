@@ -326,3 +326,97 @@ print(10 < 11)
 # ~   NOT Inverts all the bits
 # <<  Zero fill left shift    Shift left by pushing zeros in from the right and let the leftmost bits fall off
 # >>  Signed right shift  Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+#List 
+thislist = ["this", "list"]
+print(thislist)
+
+#List Items
+print(thislist[0])
+
+#Type() list
+print(type(thislist))
+
+#The list() Constructor
+thelist_constructor = list(('chao', 'cac'))
+print(thelist_constructor)
+
+# Python Collections (Arrays)
+
+# There are four collection data types in the Python programming language:
+
+#     List is a collection which is ordered and changeable. Allows duplicate members.
+#     Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+#     Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+#     Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+#Negative Indexing
+print(thislist[-1])
+
+#Change Item Value
+thislist[1] = "change_item_value"
+print(thislist)
+
+#Insert Items
+thislist.insert(1, "insert_item") 
+print(thislist)
+
+#Append Items
+thislist.append("append_item")
+print(thislist)
+
+#Extend List
+extend_list = ["extend", "list"]
+thislist.extend(extend_list)
+print(thislist)
+
+#Add Any Iterable
+add_any_iterable = ('add', 'any', 'iterable')
+thislist.extend(add_any_iterable)
+print(thislist)
+
+#Remove Specified Item remove() method
+thislist.remove("extend")
+print(thislist)
+
+#Remove Specified Index pop() method
+thislist.pop(1)
+print(thislist)
+
+#The del keyword also removes the specified index:
+del thislist[0]
+print(thislist)
+
+#Clear the List clear() method
+thislist.clear()
+print(thislist)
+
+thislist_loop = ['chao', 'cac', 'ban']
+#Loop Through a List
+for i in thislist_loop:
+    print(i)
+#Loop Through the Index Numbers
+#Use the range() and len() functions
+for x in range(len(thislist_loop)):
+    print(x)
+    print(thislist_loop[x])
+
+#Using a While Loop
+while_loop = 0
+while while_loop < len(thislist_loop):
+    print(thislist_loop[while_loop])
+    while_loop = while_loop + 1 
+
+#Looping Using List Comprehension
+[print(x) for x in thislist_loop]
+print("\n")
+
+
+#List Comprehension
+thislist_loop_1 = []
+for t in thislist_loop:
+    if "a" in t:
+        thislist_loop_1.append(t)
+print(thislist_loop_1)
+
+#

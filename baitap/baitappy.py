@@ -419,4 +419,82 @@ for t in thislist_loop:
         thislist_loop_1.append(t)
 print(thislist_loop_1)
 
-#
+#Sort List Alphanumerically
+#List objects have a sort() method that will sort the list alphanumerically, ascending, by default:
+
+sort_list_alpanumerically = ["a", "c", "o", "z", "w", "l"]
+sort_list_alpanumerically.sort()
+print(sort_list_alpanumerically)
+
+#Sort Descending
+#To sort descending, use the keyword argument reverse = True:
+sort_descending = ["a", "c", "o", "z", "w", "l"]
+sort_descending.sort(reverse = True)
+print(sort_descending)
+
+#Customize Sort Function
+#You can also customize your own function by using the keyword argument key = function.
+
+def customize_sort_function(n):
+    return abs(n - 50)
+number_sort_list = [100, 200, 500, 250, 55]
+number_sort_list.sort(key = customize_sort_function)
+print(number_sort_list)
+
+#Case Insensitive Sort
+#By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters:
+case_insensitive_sort = ["banana", "Orange", "Kiwi", "cherry"]
+case_insensitive_sort.sort()
+print(case_insensitive_sort)
+
+#Luckily we can use built-in functions as key functions when sorting a list.
+#So if you want a case-insensitive sort function, use str.lower as a key function:
+case_insensitive_sort.sort(key = str.lower)
+print(case_insensitive_sort)
+
+#Reverse Order
+#What if you want to reverse the order of a list, regardless of the alphabet?
+#The reverse() method reverses the current sorting order of the elements.
+reverse_order = ["banana", "Orange", "Kiwi", "cherry"]
+reverse_order.reverse()
+print(reverse_order)
+
+#copy list
+copy_list = ["a", "b" , "c"]
+copy_list_1 = copy_list.copy()
+print(copy_list_1)
+
+copy_list_2 = list(copy_list)
+print(copy_list_2)
+
+#Join Two Lists
+join_one = ["a", "b"]
+join_two = [1, 2]
+join_two_list = join_one + join_two
+print(join_two_list)
+
+#append() with join two list
+for i in join_two:
+    join_one.append(i)
+print(join_one)
+
+#extend() with join two list
+join_one.extend(join_two)
+print(join_one)
+
+# List Methods
+
+# Python has a set of built-in methods that you can use on lists.
+# Method  Description
+# append()    Adds an element at the end of the list
+# clear() Removes all the elements from the list
+# copy()  Returns a copy of the list
+# count() Returns the number of elements with the specified value
+# extend()    Add the elements of a list (or any iterable), to the end of the current list
+# index() Returns the index of the first element with the specified value
+# insert()    Adds an element at the specified position
+# pop()   Removes the element at the specified position
+# remove()    Removes the item with the specified value
+# reverse()   Reverses the order of the list
+# sort()  Sorts the list
+

@@ -499,3 +499,10 @@ print(join_one)
 # sort()  Sorts the list
 
 #https://www.w3schools.com/python/python_tuples.asp
+
+#Python Sets {}
+
+mysets = {"dang", "ho", "huu", "phuc"}
+
+#SET
+print(mysets)

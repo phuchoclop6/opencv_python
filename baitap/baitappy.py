@@ -649,7 +649,7 @@ huuphuc2.clear()
 print(huuphuc2)
 
 #https://www.w3schools.com/python/python_dictionaries_loop.asp
-
+#Loop Through a Dictionary
 huuphuc3 = {
     "ho": "dang",
     "ten": "phuc",
@@ -658,3 +658,39 @@ huuphuc3 = {
     "datotnghiep": False,
     "caphoc": ["cap1", "cap2", "cap3", "daihoc"]
 }
+
+for x in huuphuc3:
+    print(x)
+print("--------------------------------------------------\n")
+
+for x in huuphuc3:
+    print(huuphuc3[x])
+print("--------------------------------------------------\n")
+
+#you can use values() method:
+for x in huuphuc3.values():
+    print(x)
+print("--------------------------------------------------\n")
+
+#you can use keys()
+for x in huuphuc3.keys():
+    print(x)
+print("--------------------------------------------------\n")
+
+#you can use items(): để in ra tất cả giá trị của dictionary
+for x, y in huuphuc3.items():
+    print(x, y)
+print("--------------------------------------------------\n")
+
+#copy dictionary
+#you can use copy() method:
+huuphuc4 = huuphuc3.copy()
+print(huuphuc4)
+print("--------------------------------------------------\n")
+
+#you can use dict() method thay vì use copy() method:
+huuphuc5 = dict(huuphuc3)
+print(huuphuc5)
+print("--------------------------------------------------\n")
+
+

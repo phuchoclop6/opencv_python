@@ -695,3 +695,97 @@ print("--------------------------------------------------\n")
 
 #https://www.w3schools.com/python/python_dictionaries_nested.asp
 
+#Python - nested Dictionaries
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+print(myfamily)
+
+child11 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child22 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child33 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily1 = {
+  "child1" : child11,
+  "child2" : child22,
+  "child3" : child33
+}
+print(myfamily1)
+
+# Dictionary Methods
+# Python has a set of built-in methods that you can use on dictionaries.
+
+# Method	Description
+# clear()	Removes all the elements from the dictionary
+# copy()	Returns a copy of the dictionary
+# fromkeys()	Returns a dictionary with the specified keys and value
+# get()	Returns the value of the specified key
+# items()	Returns a list containing a tuple for each key value pair
+# keys()	Returns a list containing the dictionary's keys
+# pop()	Removes the element with the specified key
+# popitem()	Removes the last inserted key-value pair
+# setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+# update()	Updates the dictionary with the specified key-value pairs
+# values()	Returns a list of all the values in the dictionary
+
+#Python if ... else
+
+# Python Conditions and If statements
+# Python supports the usual logical conditions from mathematics:
+
+# Equals: a == b
+# Not Equals: a != b
+# Less than: a < b
+# Less than or equal to: a <= b
+# Greater than: a > b
+# Greater than or equal to: a >= b
+
+if_else_1 = 120
+if_else_2 = 140
+
+#if else
+if if_else_1 < if_else_2:
+    print("lớn hơn")
+else:
+    print("nhỏ hơn")
+
+#elif
+if if_else_1 > if_else_2:
+    print(" lon hon")
+elif if_else_1 < if_else_2:
+    print("nho hon")
+
+#short hand if
+if if_else_1 < if_else_2: print("be hon")
+
+#short hand if ... else
+print("lon hon") if if_else_1 > if_else_2 else print("nho hon")
+
+if_else_3 = 160
+#if ... else with and
+if if_else_1 < if_else_2 and if_else_2 < if_else_3:
+    print("nho hon")
+
+#if ..else with or
+if if_else_1 < if_else_2 or if_else_1 > if_else_3:
+    print("1 lon")

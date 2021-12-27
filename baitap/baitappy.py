@@ -649,3 +649,12 @@ huuphuc2.clear()
 print(huuphuc2)
 
 #https://www.w3schools.com/python/python_dictionaries_loop.asp
+
+huuphuc3 = {
+    "ho": "dang",
+    "ten": "phuc",
+    "tenlot": "ho huu",
+    "daybith": 2000,
+    "datotnghiep": False,
+    "caphoc": ["cap1", "cap2", "cap3", "daihoc"]
+}

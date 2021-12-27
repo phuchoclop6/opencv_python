@@ -513,7 +513,7 @@ print(len(mysets))
 
 print(type(mysets))
 
-Python Collections (Arrays)
+#Python Collections (Arrays)
 
 # There are four collection data types in the Python programming language:
 
@@ -545,3 +545,107 @@ Python Collections (Arrays)
 # update()    Update the set with the union of this set and others
 
 #https://www.w3schools.com/python/python_dictionaries.asp
+
+#Python dictionaries
+huuphuc = {
+    "ho": "dang",
+    "ten": "phuc",
+    "tenlot": "ho huu",
+    "daybith": 2000
+}
+
+print(huuphuc)
+#dictionary items
+print("ten la : " + huuphuc["ten"])
+
+#Dictionary Ordered or Unordered?
+# Duplicates Not Allowed
+huuphuc1 = {
+    "ho": "dang",
+    "ten": "phuc",
+    "tenlot": "ho huu",
+    "daybith": 2000,
+    "daybith": 2021
+}
+#nó sẽ in ra 2021 thay vì 2000 vì sẽ lấy giá trị ở cuối của biến 
+print(huuphuc1)
+
+# Dictionary length 
+print(len(huuphuc))
+
+#dictionary items - data types
+
+huuphuc2 = {
+    "ho": "dang",
+    "ten": "phuc",
+    "tenlot": "ho huu",
+    "daybith": 2000,
+    "datotnghiep": False,
+    "caphoc": ["cap1", "cap2", "cap3", "daihoc"]
+}
+
+print(huuphuc2)
+
+print(type(huuphuc2))
+
+#Accessing Items (truy cập các mục)
+accessinng_items = huuphuc2["ho"]
+print(accessinng_items)
+
+#use method get() when accessing items
+accessinng_items_get = huuphuc2.get("ten")
+print(accessinng_items_get)
+
+#Dictionary get keys
+dictionary_get_keys = huuphuc2.keys()
+print(huuphuc2)
+
+huuphuc2["car"] = "wave"
+print(huuphuc2)
+
+#Dictionary Get Values 
+dictionary_get_values = huuphuc2.values()
+print(dictionary_get_values)
+
+huuphuc2["car"] = "exenter"
+print(dictionary_get_values)
+
+# dictionary get items  
+dictionary_get_items = huuphuc2.items()
+print(dictionary_get_items)
+
+huuphuc2["car"] = "oto"
+print(dictionary_get_items)
+
+#Dictionary check if key exists
+if "ho" in huuphuc2:
+    print("key = \"ho\" have in huuphuc2 ")
+
+#Update Dictionary 
+#you can use update() method:
+
+huuphuc2.update({"car": "exenter"})
+print(huuphuc2)
+
+#add items use update() method:
+huuphuc2.update({"like": "computer"})
+print(huuphuc2)
+
+#dictionary Removing Items 
+#you can use pop() method:
+huuphuc2.pop("like")
+print(huuphuc2)
+
+#use popitem() method:
+huuphuc2.popitem()
+print(huuphuc2)
+
+#use del 
+del huuphuc2["caphoc"]
+print(huuphuc2)
+
+#use clear() method:
+huuphuc2.clear()
+print(huuphuc2)
+
+#https://www.w3schools.com/python/python_dictionaries_loop.asp

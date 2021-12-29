@@ -829,3 +829,83 @@ while while_loop_2 < 6:
     print(while_loop_2)
 
 #Python For Loops
+fruit1s = ["a", "b", "c0"]
+for x in fruit1s:
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+# Python Functions
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+
+#Arbitrary Arguments, *args (dùng con trỏ để trỏ đến vị trí giá trị cần  được sử dụng ở trong biến)
+def my_function1(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function1("Emil", "Tobias", "Linus")
+
+# Keyword Arguments (đưa vào nhiều biến vào có thể tùy ý sử dụng các biến đó)
+def my_function2(a,b,c):
+    print("chao "+ a)
+my_function2(a="phuc",b="ghag",c="luffy")
+
+# Arbitrary Keyword Arguments, **kwargs (đối số khóa tùy ý)
+def my_function3(**name):
+    print("chao " + name["lname"])
+my_function3(fname="jaja", lname="phc")
+
+# Default Parameter Value (giá trị tham số mặc định)
+def my_function4(name=" "):
+    print("chao chao " + name)
+my_function4("gaga")
+
+# Passing a List as an Argument
+def my_function5(food):
+    for x in food:
+        print(x)
+traicay= ["tao", "xoai", " cam"]
+my_function5(traicay)
+
+#return values
+#you can use return statement:
+def my_function6(x):
+    return 5 * x
+print(my_function6(3))
+
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+
+#Python Lambda
+# Một hàm lambda là một hàm ẩn danh nhỏ.
+# Một hàm lambda có thể nhận bất kỳ số lượng đối số nào, nhưng chỉ có thể có một biểu thức
+# Cú pháp
+# lambda arguments : expression
+x = lambda a : a + 10
+print(x(5))
+
+y = lambda a,b : a * b
+print(y(5,7))
+
+def myfunc(n):
+  return lambda a : a * n
+
+mytripler = myfunc(3)
+
+print(mytripler(11))

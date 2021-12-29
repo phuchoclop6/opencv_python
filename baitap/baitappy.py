@@ -1,5 +1,5 @@
 #biến python
-# nhiều giá trị đến nhiều biến 
+# nhiều giá trị đến nhiều biến
 print("nhiều giá trị đến nhiều biến")
 x1, y1, z1 = 'chao', 'cac', 'ban'
 print(x1)
@@ -53,7 +53,7 @@ def hamglobal():
     global _global
     _global = "global toan cau"
 hamglobal()
-print("day la " + _global)    
+print("day la " + _global)
 
 #global bên trong cùng tên với biến bên ngoài
 print("\nglobal bên trong cùng tên với biến bên ngoài")
@@ -73,12 +73,12 @@ print("day la " + _global1)
 #Loại Boolean:	bool
 #Loại nhị phân:	bytes, bytearray, memoryview
 
-#lấy loại dữ liệu 
+#lấy loại dữ liệu
 print("\nlấy loại dữ liệu")
-layloaidulieu = 5                                                      
+layloaidulieu = 5
 print(type(layloaidulieu))
 
-#Số python 
+#Số python
 print("\nso python")
 soint = 1
 sofloat = 2.8
@@ -121,7 +121,7 @@ print(chidinha)
 stringa = "day la chuoi a"
 print("\n " + stringa)
 
-#chuoi nhieu dong 
+#chuoi nhieu dong
 stringnhieudong = """chao,
 cac,
 ban."""
@@ -131,7 +131,7 @@ print(stringnhieudong)
 stringmang = "hello, phuc"
 print("\n" + stringmang[1])
 
-#vong qua 1 chuoi 
+#vong qua 1 chuoi
 stringvonglap = " string vong lap"
 for i in stringvonglap:
     print(i)
@@ -174,7 +174,7 @@ print(string_replace.replace("the", "vao"))
 #Split string
 string_split = "split string"
 print(string_split.split(" "))
-#String concatenation 
+#String concatenation
 string_concatenation_1 = "noi chuoi"
 string_concatenation_2 = "lai voi nhau"
 string_concatenation_3 = string_concatenation_1 + string_concatenation_2
@@ -192,14 +192,14 @@ print(string_format_ten.format(string_format_age))
 print(string_format_ttsv.format(string_format_age, string_format_school, string_format_tinh))
 
 #Escape Characters
-# \' Single Quote    
-# \\  Backslash   
-# \n  New Line    
-# \r  Carriage Return 
-# \t  Tab 
-# \b  Backspace   
-# \f  Form Feed   
-# \ooo    Octal value 
+# \' Single Quote
+# \\  Backslash
+# \n  New Line
+# \r  Carriage Return
+# \t  Tab
+# \b  Backspace
+# \f  Form Feed
+# \ooo    Octal value
 # \xhh    Hex value
 
 string_escape = "chu tich \"ho chi minh\" la chu tich nuoc"
@@ -261,61 +261,61 @@ print(10 < 11)
 # Arithmetic operators are used with numeric values to perform common mathematical operations:
 
 # Operator    Name    Example Try it
-# +   Addition    x + y   
-# -   Subtraction x - y   
-# *   Multiplication  x * y   
-# /   Division    x / y   
-# %   Modulus x % y   
-# **  Exponentiation  x ** y  
+# +   Addition    x + y
+# -   Subtraction x - y
+# *   Multiplication  x * y
+# /   Division    x / y
+# %   Modulus x % y
+# **  Exponentiation  x ** y
 # //  Floor division  x // y
 
 # Python Assignment Operators
 # Assignment operators are used to assign values to variables:
 
 # Operator    Example Same As Try it
-# =   x = 5   x = 5   
-# +=  x += 3  x = x + 3   
-# -=  x -= 3  x = x - 3   
-# *=  x *= 3  x = x * 3   
-# /=  x /= 3  x = x / 3   
-# %=  x %= 3  x = x % 3   
-# //= x //= 3 x = x // 3  
-# **= x **= 3 x = x ** 3  
-# &=  x &= 3  x = x & 3   
-# |=  x |= 3  x = x | 3   
-# ^=  x ^= 3  x = x ^ 3   
-# >>= x >>= 3 x = x >> 3  
+# =   x = 5   x = 5
+# +=  x += 3  x = x + 3
+# -=  x -= 3  x = x - 3
+# *=  x *= 3  x = x * 3
+# /=  x /= 3  x = x / 3
+# %=  x %= 3  x = x % 3
+# //= x //= 3 x = x // 3
+# **= x **= 3 x = x ** 3
+# &=  x &= 3  x = x & 3
+# |=  x |= 3  x = x | 3
+# ^=  x ^= 3  x = x ^ 3
+# >>= x >>= 3 x = x >> 3
 # <<= x <<= 3 x = x << 3
 
 # Python Comparison Operators
 # Comparison operators are used to compare two values:
 
 # Operator    Name    Example Try it
-# ==  Equal   x == y  
-# !=  Not equal   x != y  
-# >   Greater than    x > y   
-# <   Less than   x < y   
-# >=  Greater than or equal to    x >= y  
-# <=  Less than or equal to   x <= y  
+# ==  Equal   x == y
+# !=  Not equal   x != y
+# >   Greater than    x > y
+# <   Less than   x < y
+# >=  Greater than or equal to    x >= y
+# <=  Less than or equal to   x <= y
 # Python Logical Operators
 # Logical operators are used to combine conditional statements:
 
 # Operator    Description Example Try it
-# and     Returns True if both statements are true    x < 5 and  x < 10   
-# or  Returns True if one of the statements is true   x < 5 or x < 4  
-# not Reverse the result, returns False if the result is true not(x < 5 and x < 10)   
+# and     Returns True if both statements are true    x < 5 and  x < 10
+# or  Returns True if one of the statements is true   x < 5 or x < 4
+# not Reverse the result, returns False if the result is true not(x < 5 and x < 10)
 # Python Identity Operators
 # Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
 
 # Operator    Description Example Try it
-# is  Returns True if both variables are the same object  x is y  
-# is not  Returns True if both variables are not the same object  x is not y  
+# is  Returns True if both variables are the same object  x is y
+# is not  Returns True if both variables are not the same object  x is not y
 # Python Membership Operators
 # Membership operators are used to test if a sequence is presented in an object:
 
 # Operator    Description Example Try it
-# in  Returns True if a sequence with the specified value is present in the object    x in y  
-# not in  Returns True if a sequence with the specified value is not present in the object    x not in y  
+# in  Returns True if a sequence with the specified value is present in the object    x in y
+# not in  Returns True if a sequence with the specified value is not present in the object    x not in y
 # Python Bitwise Operators
 # Bitwise operators are used to compare (binary) numbers:
 
@@ -327,7 +327,7 @@ print(10 < 11)
 # <<  Zero fill left shift    Shift left by pushing zeros in from the right and let the leftmost bits fall off
 # >>  Signed right shift  Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
 
-#List 
+#List
 thislist = ["this", "list"]
 print(thislist)
 
@@ -358,7 +358,7 @@ thislist[1] = "change_item_value"
 print(thislist)
 
 #Insert Items
-thislist.insert(1, "insert_item") 
+thislist.insert(1, "insert_item")
 print(thislist)
 
 #Append Items
@@ -405,7 +405,7 @@ for x in range(len(thislist_loop)):
 while_loop = 0
 while while_loop < len(thislist_loop):
     print(thislist_loop[while_loop])
-    while_loop = while_loop + 1 
+    while_loop = while_loop + 1
 
 #Looping Using List Comprehension
 [print(x) for x in thislist_loop]
@@ -567,10 +567,10 @@ huuphuc1 = {
     "daybith": 2000,
     "daybith": 2021
 }
-#nó sẽ in ra 2021 thay vì 2000 vì sẽ lấy giá trị ở cuối của biến 
+#nó sẽ in ra 2021 thay vì 2000 vì sẽ lấy giá trị ở cuối của biến
 print(huuphuc1)
 
-# Dictionary length 
+# Dictionary length
 print(len(huuphuc))
 
 #dictionary items - data types
@@ -603,14 +603,14 @@ print(huuphuc2)
 huuphuc2["car"] = "wave"
 print(huuphuc2)
 
-#Dictionary Get Values 
+#Dictionary Get Values
 dictionary_get_values = huuphuc2.values()
 print(dictionary_get_values)
 
 huuphuc2["car"] = "exenter"
 print(dictionary_get_values)
 
-# dictionary get items  
+# dictionary get items
 dictionary_get_items = huuphuc2.items()
 print(dictionary_get_items)
 
@@ -621,7 +621,7 @@ print(dictionary_get_items)
 if "ho" in huuphuc2:
     print("key = \"ho\" have in huuphuc2 ")
 
-#Update Dictionary 
+#Update Dictionary
 #you can use update() method:
 
 huuphuc2.update({"car": "exenter"})
@@ -631,7 +631,7 @@ print(huuphuc2)
 huuphuc2.update({"like": "computer"})
 print(huuphuc2)
 
-#dictionary Removing Items 
+#dictionary Removing Items
 #you can use pop() method:
 huuphuc2.pop("like")
 print(huuphuc2)
@@ -640,7 +640,7 @@ print(huuphuc2)
 huuphuc2.popitem()
 print(huuphuc2)
 
-#use del 
+#use del
 del huuphuc2["caphoc"]
 print(huuphuc2)
 
@@ -801,5 +801,31 @@ while_loop = 1
 while while_loop <= 5:
     print(while_loop)
     while_loop += 1
+print("===================================================================\n")
 
 #https://www.w3schools.com/python/python_while_loops.asp
+#The break Statement
+while_loop_1 = 1
+while while_loop_1 < 5:
+  print(while_loop_1)
+  if while_loop_1 == 3:
+    print("\n")
+    break
+  while_loop_1 += 1
+
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1 
+
+#The continue Statement
+while_loop_2 = 0
+while while_loop_2 < 6:
+    while_loop_2 += 1
+    if while_loop_2 == 3:
+        continue
+    print(while_loop_2)
+
+#Python For Loops

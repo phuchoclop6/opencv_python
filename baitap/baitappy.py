@@ -789,3 +789,17 @@ if if_else_1 < if_else_2 and if_else_2 < if_else_3:
 #if ..else with or
 if if_else_1 < if_else_2 or if_else_1 > if_else_3:
     print("1 lon")
+print("\n")
+
+#The pass Statement
+#if statements cannot be empty, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.
+#dùng để chứa một khối lệnh rỗng khi bạn chưa biết sử dụng nó thế nào
+
+#Python while loops
+#the while loop
+while_loop = 1
+while while_loop <= 5:
+    print(while_loop)
+    while_loop += 1
+
+#https://www.w3schools.com/python/python_while_loops.asp
